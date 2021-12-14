@@ -115,6 +115,7 @@ export default class ColumnChart {
   }
 
   async update(from, to) {
+    this.range = {from, to};
     return await this.loadData(from, to);
   }
 
